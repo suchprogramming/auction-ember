@@ -1,9 +1,34 @@
 <h1>New Lot Item</h1>
 <form>
-  <div class="form-group">
-    <label for="itemName">Item Name</label>
-    {{input value=itemName id="itemName" class="form-control"}}
+  <div class="form-group input-sm">
+    <label for="itemName"></label>
+    {{input value=itemName id="itemName" class="form-control" placeholder="Item Name"}}
+  </div>
+  <div class="form-group input-sm">
+    <label for="owner"></label>
+    {{input value=owner id="owner" class="form-control" placeholder="Item Owner"}}
+  </div>
+  <div class="form-group input-sm">
+    <label for="bidNumber"></label>
+    {{input value=bidNumber id="bidNumber" class="form-control" placeholder="Bid Number"}}
+  </div>
+  <div class="form-group input-sm">
+    <label for="price"></label>
+    {{input value=price id="price" class="form-control" placeholder="Estimated Starting Price"}}
+  </div>
+  <div class="form-group input-sm">
+    <label for="story"></label>
+    {{input value=story id="story" class="form-control" placeholder="Item Backstory"}}
+  </div>
+  <div class="form-group input-sm">
+    <label for="image"></label>
+    {{input value=image id="image" class="form-control" placeholder="Image URL"}}
+  </div>
+  <div class="form-group input-sm">
+    <label for="year"></label>
+    {{input value=year id="year" class="form-control" placeholder="Year Acquired"}}
   </div>
 
-  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+<br><br>
+  <button class="btn btn-primary" {{action 'save'}}>Save Item</button>
 </form>

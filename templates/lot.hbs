@@ -1,3 +1,14 @@
-<h2>{{name}}</h2>
+<div class="col-sm-6">
+  <h2>{{name}}  {{#link-to 'new-lot-item' classNames="btn btn-primary"}}Add Item{{/link-to}}</h2>
 
-{{#link-to 'new-lot-item' classNames="btn btn-primary"}}Add Item{{/link-to}}
+  {{#each item in items}}
+    <p>
+      {{item.itemName}}
+    </p>
+  {{/each}}
+
+</div>
+
+<div class="col-sm-6">
+  {{outlet}}
+</div>

@@ -7,7 +7,7 @@ Auction.NewLotItemController = Ember.ObjectController.extend({
       var controller = this;
       item.get('lot').then(function(lot) {
         lot.save();
-        controller.tansitionToRoute('lot', lot);
+        controller.transitionToRoute('lot', lot);
       });
     }
   }
