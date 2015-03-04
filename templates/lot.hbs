@@ -1,14 +1,17 @@
 <div class="col-sm-6">
   <h2>{{name}}  {{#link-to 'new-lot-item' classNames="btn btn-primary"}}Add Item{{/link-to}}</h2>
+  <br>
 
   {{#each item in items}}
-    <p>
-      {{item.itemName}}
-    </p>
+    <ul>
+      <li><img {{bind-attr src=item.image}} style="width:100px;length:80px"></li>
+      <li><h4>{{item.itemName}}</h4></li>
+    </ul>
   {{/each}}
 
 </div>
 
 <div class="col-sm-6">
+  <!-- POSSIBLE IF ELSE STATEMENT FOR SHOWING ITEM INFORMATION -->
   {{outlet}}
 </div>

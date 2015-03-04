@@ -6,6 +6,8 @@ Auction.NewLotController = Ember.Controller.extend({
       });
 
       newLot.save();
+      var self = this;
+      self.set('lot-name', "");
       this.transitionToRoute('lots');
     }
   }
