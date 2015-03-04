@@ -1,0 +1,9 @@
+<h1>Tylers' Finery</h1>
+
+<ul>
+  {{#each lot in model}}
+    <li>{{#link-to 'lot' lot}}{{lot.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-lot' classNames="btn btn-primary"}}Add a lot{{/link-to}}
