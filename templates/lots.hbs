@@ -1,9 +1,26 @@
-<h1>Tylers' Finery</h1>
-
-<ul>
-  {{#each lot in model}}
-    <li>{{#link-to 'lot' lot.id }}{{lot.name}}{{/link-to}}</li>
-  {{/each}}
-</ul>
-
+<h3>Shad-e-Bay</h3>
 {{#link-to 'new-lot' classNames="btn btn-primary"}}Add a lot{{/link-to}}
+
+<hr>
+
+{{#each lot in model}}
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="5">
+          {{#link-to 'lot' lot.id }}{{lot.name}}{{/link-to}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {{#each item in lot.items}}
+          <td>
+            <small>{{item.itemName}}</small>
+            {{#link-to 'lot' lot.id}}<img {{bind-attr src=item.image}} style="width:96px;length:80px">{{/link-to}}
+          </td>
+        {{/each}}
+      </tr>
+    </tbody>
+  </table>
+{{/each}}

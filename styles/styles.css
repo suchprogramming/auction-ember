@@ -1,3 +1,6 @@
 .blind-ul {
   list-style-type: none;
 }
+.row.auction-header{
+  display: inline;
+}

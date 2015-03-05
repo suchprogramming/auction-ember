@@ -1,10 +1,11 @@
 <h2>Item Details</h2>
-<h3>{{itemName}}</h3>
-<ul>
-  <li> Owner: {{owner}} </li>
-  <li> Bid Number: {{bidNumber}} </li>
-  <li> Price: {{price}} </li>
-  <li> Story: {{story}} </li>
-  <li> Estimated Price: {{price}} </li>
-  <li> Year Acquired: {{year}} </li>
-</ul>
+<div class="thumbnail">
+  <img {{bind-attr src=image}} style="width:320px; height:200px">
+  <div class="caption">
+    <h3>{{itemName}}</h3>
+    <p>{{story}}</p>
+    <p><small>Owner: {{owner}}</small></p>
+    <p><small>Bid Number: {{bidNumber}}</small></p>
+    <p><small>Estimated Price: {{price}}</small></p>
+  </div>
+</div>
