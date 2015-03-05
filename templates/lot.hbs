@@ -5,7 +5,7 @@
   {{#each item in items}}
     <ul class="blind-ul">
       <li><img {{bind-attr src=item.image}} style="width:100px;length:80px"></li>
-      <li><h4> {{#link-to 'show-item'}} {{item.itemName}} {{/link-to}} </h4></li>
+      <li><h4> {{#link-to 'show-item' item.id}} {{item.itemName}} {{/link-to}} </h4></li>
     </ul>
   {{/each}}
 
