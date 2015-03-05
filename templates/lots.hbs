@@ -1,5 +1,5 @@
-<h3>Shad-e-Bay</h3>
-{{#link-to 'new-lot' classNames="btn btn-primary"}}Add a lot{{/link-to}}
+ <h3 class="auction-inline"><span class="label label-default"> Shad-e-Bay</span></h3>
+{{#link-to 'new-lot' classNames="btn btn-success auction-button"}}Add Lot{{/link-to}}
 
 <hr>
 
@@ -17,7 +17,7 @@
         {{#each item in lot.items}}
           <td>
             <small>{{item.itemName}}</small>
-            {{#link-to 'lot' lot.id}}<img {{bind-attr src=item.image}} style="width:96px;length:80px">{{/link-to}}
+            {{#link-to ''}}<img {{bind-attr src=item.image}} style="width:96px;length:80px">{{/link-to}}
           </td>
         {{/each}}
       </tr>

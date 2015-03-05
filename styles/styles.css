@@ -1,6 +1,9 @@
 .blind-ul {
   list-style-type: none;
 }
-.row.auction-header{
+.auction-inline{
   display: inline;
+}
+.auction-button{
+  float: right;
 }
